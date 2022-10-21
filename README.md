@@ -1,5 +1,7 @@
 # Structural and functional asymmetry in the neonatal cerebral cortex
 
+![](Figure5.png)
+
 This is a repo containing files and scripts used in Williams, LZJ et al. (2022). Structural and functional cortical asymmetry of the neonatal cerebral cortex. 
 
 ## Steps for performing analysis
