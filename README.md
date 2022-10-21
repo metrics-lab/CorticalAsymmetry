@@ -20,4 +20,4 @@ Registration also re-run for dHCP (compared to 3rd release data), due to further
 Calculating asymmetry indices per subject, and smoothing for structural measures. 
 
 ### 4. PALM
-Can download PALM from [here](https://github.com/andersonwinkler/PALM). Requires files merged across subjects, for each modality. Order of merging should be same as the design matrix.
+Can download PALM from [here](https://github.com/andersonwinkler/PALM). Need to specify to run with Octabe or MATLAB in [~/palm/palm](https://github.com/andersonwinkler/PALM/blob/master/palm). Requires files merged across subjects, for each modality. Order of merging should be same as the design matrix. Configuration used to run PALM for each experiment. 
