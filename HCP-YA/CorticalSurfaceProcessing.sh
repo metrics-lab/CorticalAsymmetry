@@ -9,7 +9,7 @@
 ### is either MSMSulc (highly regularised registration to folding-based template) or MSMAll (areal-based alignment using RSN 
 ### spatial maps, T1w/T2w ratio map and visuotopic maps), so is not appropriate for comparison against the dHCP cohort.
 
-for Subject in $( cat </data/CorticalAsymmetry/HCPAsymmetryList.txt) ; do 
+for Subject in $( cat </data/CorticalAsymmetry/HCP/HCPAsymmetryList.txt) ; do 
 
 for Hemisphere in L R ; do 
 
