@@ -18,6 +18,7 @@ First, cortical surfaces need to be registered from their native space to the fu
 **dHCP:** Registration was run using [align_to_template_3rd_release.sh](https://github.com/ecr05/dHCP_template_alignment/blob/master/surface_to_template_alignment/align_to_template_3rd_release.sh). The cortical surface deformations released as part of the 3rd dHCP release are **NOT** the same as the ones used in this manuscript (a further symmetrisation step was performed after release of the data). 
 
 **HCP-YA:** Registration was run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
+**dHCP-to-HCP:** Registration between dHCP and HCP-YA was run using [CorticalSurfaceRegistration.sh]. Deformations available in ~/Templates/Deformations
 
 ### 2. Cortical surface processing
 These scripts perform the following steps: 
@@ -25,11 +26,11 @@ These scripts perform the following steps:
 2. Resampling surfaces and structural cortical metrics from native to symmetric template space
 3. Calculating difference maps (asymmetry index maps for each cortical metric) and smoothing
 
-For the dHCP, use [CorticalSurfaceProcessing.sh]()
+**dHCP:** Use [CorticalSurfaceProcessing.sh]()
 
-For the HCP-YA, use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/HCP-YA/CorticalSurfaceProcessing.sh)
+**HCP-YA:** Use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/HCP-YA/CorticalSurfaceProcessing.sh)
 
-For dHCP-to-HCP, use NEED TO ADD 
+**dHCP-to-HCP:** use NEED TO ADD 
 
 Code for processing resting-state fMRI for functional asymmetry analyses in the dHCP is located [here](https://git.fmrib.ox.ac.uk/seanf/asymmetry-analysis). 
 
