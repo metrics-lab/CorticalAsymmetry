@@ -1,4 +1,4 @@
-# Structural and functional asymmetry in the neonatal cerebral cortex
+# Structural and functional asymmetry of the neonatal cerebral cortex
 
 ![Development of symmetric surface-based atlas](Images/Figure5.png)
 
