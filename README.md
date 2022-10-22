@@ -17,7 +17,12 @@ wb_command -surface-vertex-areas
 Registration rerun for HCP-YA cohort
 
 ```bash
-msm --inmesh=100206.L.sphere.rot.native.surf.gii --refmesh=L.sphere.32k_fs_LR.surf.gii --indata=100206.L.sulc.native.shape.gii --refdata=/MSMSulc.refsulc.L.32k_fs_LR.shape.gii --conf=config_standard_MSMstrain_0.03 -o 100206.L.MSMstrain. 
+msm --inmesh=100206.L.sphere.rot.native.surf.gii \
+    --refmesh=L.sphere.32k_fs_LR.surf.gii \
+    --indata=100206.L.sulc.native.shape.gii \ 
+    --refdata=/MSMSulc.refsulc.L.32k_fs_LR.shape.gii \
+    --conf=config_standard_MSMstrain_0.03 \
+    -o 100206.L.MSMstrain. 
 ```
 
 Registration also re-run for dHCP (compared to 3rd release data), due to further symmetrisation step described in manuscript. 
