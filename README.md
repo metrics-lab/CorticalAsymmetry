@@ -30,4 +30,4 @@ For the dHCP, use [CorticalSurfaceProcessing.sh]()
 For the HCP-YA, use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/HCP-YA/CorticalSurfaceProcessing.sh)
 
 ### 3. Permutation analyses 
-Can download PALM from [here](https://github.com/andersonwinkler/PALM). Need to specify to run with Octabe or MATLAB in [~/palm/palm](https://github.com/andersonwinkler/PALM/blob/master/palm).
+The command-line calls to PALM used in these analyses are located in [~/metrics-lab/CorticalAsymmetry/PermutationAnalyses](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/PermutationAnalyses). This also contains a README.md describing the flags and the inputs used. 
