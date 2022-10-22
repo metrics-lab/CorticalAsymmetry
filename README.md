@@ -2,9 +2,7 @@
 
 ![Development of symmetric surface-based atlas](Images/Figure5.png)
 
-This is a repo containing files and scripts used to investigate cortical asymmetry in the Developing Human Conenctome Project. 
-
-Features of brain asymmetry have been implicated in a broad range of cognitive processes; however, their origins are still poorly understood. Using a new left-right symmetric, spatiotemporal cortical surface atlas, we investigated cortical asymmetries in 442 healthy term-born neonates using structural and functional magnetic resonance images from the Developing Human Connectome Project. Cortical asymmetries observed in the term cohort were contextualised in two ways: by comparing them against cortical asymmetries observed in 103 preterm neonates scanned at term-equivalent age, and by comparing structural asymmetries against those observed in 1110 healthy young adults from the Human Connectome Project. Our results demonstrate that the neonatal cortex is markedly asymmetric in both structure and function, and while associations with preterm birth and biological sex were minimal, significant differences exist between birth and adulthood. Although these changes may represent experience-dependent developmental milestones, longitudinal studies across the lifespan are required to fully address these hypotheses.
+This is a repo containing files and scripts used to investigate cortical asymmetry in the Developing Human Conenctome Project and Human Connectome Project (Young Adult).
 
 ## Software used for cortical surface processing and analysis
 1. [Multimodal surface matching (MSM)](https://github.com/ecr05/MSM_HOCR/releases)
