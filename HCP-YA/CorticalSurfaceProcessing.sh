@@ -47,7 +47,7 @@ for Metric in corrThickness sulc curvature ; do
 
 SphereReg=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.MSMStrain.sphere.reg.surf.gii
 NativeMidthickness=/data/HCP/${Subject}/MNINonLinear/Native/${Subject}.${Hemisphere}.midthickness.native.surf.gii
-TemplateMidthickness=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.${anatomical}.MSMStrain.surf.gii
+TemplateMidthickness=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.midthickness.MSMStrain.surf.gii
 NativeMetric=/data/HCP/${Subject}/MNINonLinear/Native/${Subject}.${Hemisphere}.${Metric}.native.shape.gii
 OutMetric=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.${Metric}.MSMStrain.shape.gii
 
