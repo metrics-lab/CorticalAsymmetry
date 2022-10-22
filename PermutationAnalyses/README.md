@@ -4,8 +4,8 @@ The [user guide](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/PALM/UserGuide) for FSL 
 
 | flag        | Description |
 |     :---:   |:----        |
-| -i <file>   | Title       |
-| -m <file>   | Text        |
+| -i '<file>'   | Title       |
+| -m '<file>'   | Text        |
 
 
 
