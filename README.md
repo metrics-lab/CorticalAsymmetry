@@ -19,7 +19,7 @@ First, cortical surfaces need to be registered from their native space to the fu
 Registration was performed using the scripts [here](https://github.com/ecr05/dHCP_template_alignment). The cortical surface deformations released as part of the 3rd dHCP release are **NOT** the same as the ones used in this manuscript (a further symmetrisation step was performed after release of the data). 
 
 #### HCP-YA
-Registration is run using the CorticalSurfaceRegistration.sh script in [~/metrics-lab/CorticalAsymmetry/HCP-YA](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA)
+Registration is run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
 
 ### Cortical surface processing
 These scripts perform the following steps: 
