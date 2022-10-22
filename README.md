@@ -38,7 +38,7 @@ Code for processing resting-state fMRI for functional asymmetry analyses in the 
 The command-line calls to PALM used in these analyses are located in [~/metrics-lab/CorticalAsymmetry/PermutationAnalyses](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/PermutationAnalyses). This also contains a README.md describing the flags and the inputs used. 
 
 ## Citation
-If you found this code useful, or have used the dHCP symmetric template for your own work, please cite: 
+If you found this code useful, or have used the [dHCP symmetric template](https://brain-development.org/brain-atlases/atlases-from-the-dhcp-project/cortical-surface-template/) for your own work, please cite: 
 
 [Structural and functional asymmetry of the neonatal cerebral cortex](https://www.biorxiv.org/content/10.1101/2021.10.13.464206v2.abstract)
 
