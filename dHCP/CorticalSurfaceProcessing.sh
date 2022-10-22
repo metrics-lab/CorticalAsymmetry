@@ -15,12 +15,12 @@ for Hemisphere in left right ; do
 
 echo ${Subject} ${Hemisphere}
 
-### Calculate surface vertex area on T1w space, native resolution mesh
+### Calculate surface vertex area on native resolution mesh
 
 echo 'Calculating pial surface vertex area'
 
-PialSurface=/data/HCP/${Subject}/T1w/Native/${Subject}.${Hemisphere}.pial.native.surf.gii
-PialVertexArea=/data/HCP/${Subject}/T1w/Native/${Subject}.${Hemisphere}.pial_va.native.shape.gii
+PialSurface=/data/dHCP/sub-${Subject}/ses-${Session}/anat/Native/sub-${Subject}_ses-${Session}_${Hemisphere}_pial.surf.gii
+PialVertexArea=/data/dHCP/sub-${Subject}/ses-${Session}/anat/Native/sub-${Subject}_ses-${Session}_${Hemisphere}_pial.surf.gii
 
 wb_command -surface-vertex-areas ${PialSurface} ${PialVA}
 
