@@ -13,13 +13,25 @@ This is a repo containing files and scripts used in Williams, LZJ et al. (2022).
 ## Steps for performing analysis
 
 ### 1. Cortical surface registration
-First, cortical surfaces need to be registered from their native space to the fully-symmetrised templates contained in [/metrics-lab/CorticalAsymmetry/Templates](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/Templates). Registration is run using MSM, and is driven by cortical folding.
+First, cortical surfaces need to be registered from their native space to the fully-symmetrised templates contained in [~/metrics-lab/CorticalAsymmetry/Templates](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/Templates). Registration is run using MSM, and is driven by cortical folding.
 
 #### dHCP
 Registration was performed using the scripts [here](https://github.com/ecr05/dHCP_template_alignment). The cortical surface deformations released as part of the 3rd dHCP release are **NOT** the same as the ones used in this manuscript (a further symmetrisation step was performed after release of the data). 
 
 #### HCP-YA
-Registration is run using the CorticalSurfaceRegistration.sh script in [/metrics-lab/CorticalAsymmetry/HCP-YA](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA)
+Registration is run using the CorticalSurfaceRegistration.sh script in [~/metrics-lab/CorticalAsymmetry/HCP-YA](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA)
+
+### Cortical surface processing
+These scripts perform the following steps: 
+1. Calculating surface area 
+2. Resampling surfaces and cortical metrics from native to symmetric template space
+3. Calculating difference maps (asymmetry index maps for each cortical metric) and smoothing
+
+For dHCP, see [~/metrics-lab/CorticalAsymmetry/dHCP/CorticalSurfaceProcessing.sh]()
+
+For HCP-YA, see [~/metrics-lab/CorticalAsymmetry/HCP-YA/CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/HCP-YA/CorticalSurfaceProcessing.sh)
+
+
 
 ### 1. Calculating surface area 
 Cortical surface area not publicly released by dHCP or HCP-YA studies.
