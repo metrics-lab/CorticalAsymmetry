@@ -30,7 +30,7 @@ These scripts perform the following steps:
 
 **HCP-YA:** Use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/HCP-YA/CorticalSurfaceProcessing.sh)
 
-**dHCP-to-HCP:** use NEED TO ADD 
+**dHCP-to-HCP:** Use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/dHCP_HCP-YA/CorticalSurfaceProcessing.sh)
 
 Code for processing resting-state fMRI for functional asymmetry analyses in the dHCP is located [here](https://git.fmrib.ox.ac.uk/seanf/asymmetry-analysis). 
 
