@@ -1,0 +1,52 @@
+palm -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC1.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC1_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC2.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC2_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC3.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC3_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC4.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC4_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC5.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC5_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC6.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC6_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC8.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC8_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC9.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC9_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC10.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC10_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC11.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC11_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC12.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC12_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC13.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC13_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC14.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC14_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC16.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC16_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC19.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC19_mask.func.gii \
+     -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC21.ZStat_asymmetry.func.gii \
+     -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC21_mask.func.gii \
+     -i /data/Data/asymmetry/Nature_Human_Behaviour/merged_442_sulc_asymmetry_smoothed_FINAL.shape.gii \
+     -m /data/Data/dHCP_1/dhcp_3rd_release_atlas/week-40_hemi-left_space-dhcpSym_dens-32k_desc-medialwallsymm_mask_ero.shape.gii \
+     -i /data/Data/asymmetry/Nature_Human_Behaviour/merged_442_pial_corr_va_asymmetry_smoothed_FINAL.shape.gii \
+     -m /data/Data/dHCP_1/dhcp_3rd_release_atlas/week-40_hemi-left_space-dhcpSym_dens-32k_desc-medialwallsymm_mask_ero.shape.gii \
+     -i /data/Data/asymmetry/Nature_Human_Behaviour/merged_442_corr_thickness_asymmetry_smoothed_FINAL.shape.gii \
+     -m /data/Data/dHCP_1/dhcp_3rd_release_atlas/week-40_hemi-left_space-dhcpSym_dens-32k_desc-medialwallsymm_mask_ero.shape.gii \
+     -s /data/Data/asymmetry/Nature_Human_Behaviour/average-442_hemi-average_space-dhcpSym40_midthickness.surf.gii \
+     /data/Data/asymmetry/Nature_Human_Behaviour/average_442_corr_midthickness_va_FINAL.shape.gii \
+     -d '/data/Data/asymmetry/Nature_Human_Behaviour/Archive/NHB_Term_11-05-22/Term.mat \
+     -t '/data/Data/asymmetry/Nature_Human_Behaviour/Archive/NHB_Term_11-05-22/Term.con \
+     -o /data/Data/asymmetry/Nature_Human_Behaviour/Term_11-05-22/term \
+     -T \
+     -tfce2d \
+     -precision double \
+     -logp \
+     -corrcon \
+     -corrmod \
+     -nouncorrected \
+     -approx gamma \
+     -ise
