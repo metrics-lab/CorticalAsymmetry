@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 palm -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC1.ZStat_asymmetry.func.gii \
      -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC1_mask.func.gii \
      -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC2.ZStat_asymmetry.func.gii \
@@ -38,8 +40,8 @@ palm -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_442_IC1.ZSt
      -m /data/Data/dHCP_1/dhcp_3rd_release_atlas/week-40_hemi-left_space-dhcpSym_dens-32k_desc-medialwallsymm_mask_ero.shape.gii \
      -s /data/Data/asymmetry/Nature_Human_Behaviour/average-442_hemi-average_space-dhcpSym40_midthickness.surf.gii \
      /data/Data/asymmetry/Nature_Human_Behaviour/average_442_corr_midthickness_va_FINAL.shape.gii \
-     -d '/data/Data/asymmetry/Nature_Human_Behaviour/Archive/NHB_Term_11-05-22/Term.mat \
-     -t '/data/Data/asymmetry/Nature_Human_Behaviour/Archive/NHB_Term_11-05-22/Term.con \
+     -d /data/Data/asymmetry/Nature_Human_Behaviour/Archive/NHB_Term_11-05-22/Term.mat \
+     -t /data/Data/asymmetry/Nature_Human_Behaviour/Archive/NHB_Term_11-05-22/Term.con \
      -o /data/Data/asymmetry/Nature_Human_Behaviour/Term_11-05-22/term \
      -T \
      -tfce2d \
