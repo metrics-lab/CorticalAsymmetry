@@ -4,6 +4,12 @@
 
 This is a repo containing files and scripts used in Williams, LZJ et al. (2022). Structural and functional cortical asymmetry of the neonatal cerebral cortex.
 
+## Software used for cortical surface processing and analysis
+1. Multimodal surface matching 
+2. Connectome Workbench
+3. FSL (for FSL GLM setup)
+4. FSL PALM
+
 ## Steps for performing analysis
 
 ### 1. Calculating surface area 
