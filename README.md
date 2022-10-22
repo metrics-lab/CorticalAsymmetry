@@ -20,6 +20,8 @@ First, cortical surfaces need to be registered from their native space to the fu
 **HCP-YA:** Registration was run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
 **dHCP-to-HCP:** Registration between dHCP and HCP-YA was run using [CorticalSurfaceRegistration.sh]. Deformations available in ~/Templates/Deformations
 
+---
+
 ### 2. Cortical surface processing
 These scripts perform the following steps: 
 1. Calculating surface area 
@@ -33,6 +35,8 @@ These scripts perform the following steps:
 **dHCP-to-HCP:** Use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/dHCP_HCP-YA/CorticalSurfaceProcessing.sh)
 
 Code for processing resting-state fMRI for functional asymmetry analyses in the dHCP is located [here](https://git.fmrib.ox.ac.uk/seanf/asymmetry-analysis). 
+
+---
 
 ### 3. Permutation analyses 
 The command-line calls to PALM used in these analyses are located in [~/metrics-lab/CorticalAsymmetry/PermutationAnalyses](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/PermutationAnalyses). This also contains a README.md describing the flags and the inputs used. 
