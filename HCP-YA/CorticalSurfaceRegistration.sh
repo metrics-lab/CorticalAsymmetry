@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+### Author: Logan Z. J. Williams, Oct 2022
+### Email: logan.williams@kcl.ac.uk 
+### *Please* email me if you have any questions/concerns about the code 
 
 for Subject in $( cat </data/CorticalAsymmetry/HCPAsymmetryList.txt) ; do 
 
