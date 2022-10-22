@@ -9,6 +9,10 @@ This is a repo containing files and scripts used in Williams, LZJ et al. (2022).
 ### 1. Calculating surface area 
 Cortical surface area not publicly released by dHCP or HCP-YA studies.
 
+```bash
+wb_command -surface-vertex-areas
+```
+
 ### 2. Folding-based Cortical Surface Registration
 Registration rerun for HCP-YA cohort
 
