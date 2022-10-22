@@ -15,9 +15,9 @@ This is a repo containing files and scripts used in Williams, LZJ et al. (2022).
 ### 1. Cortical surface registration
 First, cortical surfaces need to be registered from their native space to the fully-symmetrised templates contained in [~/metrics-lab/CorticalAsymmetry/Templates](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/Templates). Registration is run using MSM, and is driven by cortical folding.
 
-**dHCP:** Registration was performed using [align_to_template_3rd_release.sh](https://github.com/ecr05/dHCP_template_alignment/blob/master/surface_to_template_alignment/align_to_template_3rd_release.sh). The cortical surface deformations released as part of the 3rd dHCP release are **NOT** the same as the ones used in this manuscript (a further symmetrisation step was performed after release of the data). 
+**dHCP:** Registration was run using [align_to_template_3rd_release.sh](https://github.com/ecr05/dHCP_template_alignment/blob/master/surface_to_template_alignment/align_to_template_3rd_release.sh). The cortical surface deformations released as part of the 3rd dHCP release are **NOT** the same as the ones used in this manuscript (a further symmetrisation step was performed after release of the data). 
 
-**HCP-YA:** Registration is run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
+**HCP-YA:** Registration was run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
 
 ### 2. Cortical surface processing
 These scripts perform the following steps: 
