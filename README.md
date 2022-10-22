@@ -2,7 +2,7 @@
 
 ![Development of symmetric surface-based atlas](Images/Figure5.png)
 
-This is a repo containing files and scripts used in Williams, LZJ et al. (2022). Structural and functional cortical asymmetry of the neonatal cerebral cortex. biorXiv. DOI: [https://doi.org/10.1101/2021.10.13.464206](https://doi.org/10.1101/2021.10.13.464206)
+This is a repo containing files and scripts used in Williams, LZJ et al. (2022). Structural and functional cortical asymmetry of the neonatal cerebral cortex. _bioRxiv_. DOI: [https://doi.org/10.1101/2021.10.13.464206](https://doi.org/10.1101/2021.10.13.464206)
 
 ## Software used for cortical surface processing and analysis
 1. [Multimodal surface matching](https://github.com/ecr05/MSM_HOCR/releases)
