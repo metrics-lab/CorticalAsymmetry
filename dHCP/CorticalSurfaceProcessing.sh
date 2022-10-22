@@ -13,7 +13,7 @@ for Subject Session in $( cat </data/CorticalAsymmetry/dHCP/TermAsymmetryList.tx
 
 for Hemisphere in left right ; do 
 
-echo ${Subject} ${Hemisphere}
+echo ${Subject} ${Session} ${Hemisphere}
 
 ### Calculate surface vertex area on native resolution mesh
 
@@ -30,10 +30,10 @@ echo 'Resampling anatomical surfaces'
 
 for anatomical in midthickness pial ; do 
 
-SphereReg=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.MSMStrain.sphere.reg.surf.gii
-TemplateSphere=/data/HCPpipelines/global/templates/standard_mesh_atlases/${Hemisphere}.sphere.32k_fs_LR.surf.gii
-NativeSurface=/data/HCP/${Subject}/MNINonLinear/Native/${Subject}.${Hemisphere}.${anatomical}.native.surf.gii
-OutSurface=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.${anatomical}.MSMStrain.surf.gii
+SphereReg=/data/CorticalAsymmetry/dHCPAsymmetry/SurfaceTransforms/sub-${Subject}_ses-${Session}_hemi-${Hemisphere}_from-native_to-dhcpSym40_dens-32k_mode-sphere.reg40.surf.gii
+TemplateSphere=/data/CorticalAsymmetry/Templates/dHCP/week-40_hemi-${Hemisphere}_space-dhcpSym_dens-32k_sphere.surf.gii
+NativeSurface=/data/dHCP/sub-${Subject}/ses-${Session}/anat/Native/sub-${Subject}_ses-${Session}_${Hemisphere}_${anatomical}.surf.gii
+OutSurface=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_${anatomical}.MSMStrain.surf.gii
 
 wb_command -surface-resample ${NativeSurface} ${SphereReg} ${TemplateSphere} BARYCENTRIC ${OutSurface} 
 
@@ -45,11 +45,11 @@ echo 'Resampling cortical metrics'
 
 for Metric in corrThickness sulc curvature ; do 
 
-SphereReg=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.MSMStrain.sphere.reg.surf.gii
-NativeMidthickness=/data/HCP/${Subject}/MNINonLinear/Native/${Subject}.${Hemisphere}.midthickness.native.surf.gii
-TemplateMidthickness=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.${anatomical}.MSMStrain.surf.gii
-NativeMetric=/data/HCP/${Subject}/MNINonLinear/Native/${Subject}.${Hemisphere}.${Metric}.native.shape.gii
-OutMetric=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.${Metric}.MSMStrain.shape.gii
+SphereReg=/data/CorticalAsymmetry/dHCPAsymmetry/SurfaceTransforms/sub-${Subject}_ses-${Session}_hemi-${Hemisphere}_from-native_to-dhcpSym40_dens-32k_mode-sphere.reg40.surf.gii
+NativeMidthickness=/data/dHCP/sub-${Subject}/ses-${Session}/anat/Native/sub-${Subject}_ses-${Session}_${Hemisphere}_midthickness.surf.gii
+TemplateMidthickness=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_midthickness.MSMStrain.surf.gii
+NativeMetric=/data/dHCP/sub-${Subject}/ses-${Session}/anat/Native/sub-${Subject}_ses-${Session}_${Hemisphere}_${Metric}.shape.gii
+OutMetric=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_${Metric}.MSMStrain.shape.gii
 
 wb_command -metric-resample ${NativeMetric} ${SphereReg} ${TemplateSphere} ADAP_BARY_AREA ${OutMetric} -area-surfs ${NativeMidthickness} ${TemplateMidthickness} 
 
