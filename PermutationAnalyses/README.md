@@ -1,5 +1,15 @@
-### Setting up permutation analyses
-- Explanation of PALM flag
+## Setting up permutation analyses
+### Explanation of PALM flags
+The [user guide](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/PALM/UserGuide) for FSL PALM is very detailed, but can be a lot to take in. The flags used in the analyses performed here are in the table below. 
+
+| flag        | Description |
+|     :---:   |:----        |
+| -i <file>   | Title       |
+| -m <file>   | Text        |
+
+
+
+
 - Description of surface averaging
 - Masks
 - Correction across modalities and contrasts
