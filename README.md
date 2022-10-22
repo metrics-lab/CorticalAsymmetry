@@ -18,7 +18,8 @@ First, cortical surfaces need to be registered from their native space to the fu
 **dHCP:** Registration was run using [align_to_template_3rd_release.sh](https://github.com/ecr05/dHCP_template_alignment/blob/master/surface_to_template_alignment/align_to_template_3rd_release.sh). The cortical surface deformations released as part of the 3rd dHCP release are **NOT** the same as the ones used in this manuscript (a further symmetrisation step was performed after release of the data). 
 
 **HCP-YA:** Registration was run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
-**dHCP-to-HCP:** Registration between dHCP and HCP-YA was run using [CorticalSurfaceRegistration.sh]. Deformations available in ~/Templates/Deformations
+
+**dHCP-to-HCP:** Registration between dHCP and HCP-YA was run using [CorticalSurfaceRegistration.sh]. The dHCP-toHCP registration deformation can be found [here](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/dHCP_HCP-YA/dHCP_HCP-YA.MSMStrain.sphere.reg.surf.gii). 
 
 ---
 
