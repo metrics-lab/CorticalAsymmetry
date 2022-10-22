@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 palm -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_545_IC1.ZStat_asymmetry.func.gii \
      -m /data/Data/dHCP_1/4logan/gica_for_logan/hcp_smooth4_dim25.gica/melodic_IC1_mask.func.gii \
      -i /data/Data/dHCP_1/4logan/dr_for_logan/RSN_Asymmetries/merged_545_IC2.ZStat_asymmetry.func.gii \
