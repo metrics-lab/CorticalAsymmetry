@@ -19,7 +19,7 @@ First, cortical surfaces need to be registered from their native space to the fu
 
 **HCP-YA:** Registration was run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/tree/main/HCP-YA/)
 
-**dHCP-to-HCP:** Registration between dHCP and HCP-YA was run using [CorticalSurfaceRegistration.sh]. The dHCP-toHCP registration deformation can be found [here](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/dHCP_HCP-YA/dHCP_HCP-YA.MSMStrain.sphere.reg.surf.gii). 
+**dHCP-to-HCP:** Registration was run using [CorticalSurfaceRegistration.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/dHCP_HCP-YA/CorticalSurfaceRegistration.sh). The dHCP-to-HCP registration deformation can be found [here](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/dHCP_HCP-YA/dHCP_HCP-YA.MSMStrain.sphere.reg.surf.gii). 
 
 ---
 
