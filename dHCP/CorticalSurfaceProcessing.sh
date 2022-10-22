@@ -43,7 +43,7 @@ done
 
 echo 'Resampling cortical metrics' 
 
-for Metric in corrThickness sulc curvature ; do 
+for Metric in corr_thickness sulc curvature ; do 
 
 SphereReg=/data/CorticalAsymmetry/dHCPAsymmetry/SurfaceTransforms/sub-${Subject}_ses-${Session}_hemi-${Hemisphere}_from-native_to-dhcpSym40_dens-32k_mode-sphere.reg40.surf.gii
 NativeMidthickness=/data/dHCP/sub-${Subject}/ses-${Session}/anat/Native/sub-${Subject}_ses-${Session}_${Hemisphere}_midthickness.surf.gii
@@ -57,15 +57,15 @@ done
 
 ### Resample pial surface vertex area metric file from registered, native resolution mesh to standard 32k resolution mesh (using adaptive barycentric interpolation)
 
-OutMetric=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.pial_va.MSMStrain.shape.gii
+OutMetric=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_pial_va.MSMStrain.shape.gii
 
 wb_command -metric-resample ${PialVA} ${SphereReg} ${TemplateSphere} ADAP_BARY_AREA ${OutMetric} -area-surfs ${NativeMidthickness} ${TemplateMidthickness} 
 
 ### Regress out the effect of cortical curvature on pial surface vertex areaa
 
-UncorrectedPialVertexAreas=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.pial_va.MSMStrain.shape.gii
-CorrectedPialVertexAreas=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.pial_corr_va.MSMStrain.shape.gii
-Curvature=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.${Hemisphere}.curvature.MSMStrain.shape.gii
+UncorrectedPialVertexAreas=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_pial_va.MSMStrain.shape.gii
+CorrectedPialVertexAreas=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_pial_corr_va.MSMStrain.shape.gii
+Curvature=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_curvature.MSMStrain.shape.gii
 
 wb_command -metric-regression ${UncorrectedPialVertexAreas} ${CorrectedPialVertexAreas} -remove ${Curvature}
 
@@ -75,11 +75,11 @@ done
 
 echo 'Calculating difference maps'
 
-for Metric in pial_corr_va sulc corrThickness ; do 
+for Metric in pial_corr_va sulc corr_thickness ; do 
 
-MetricLeft=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.L.${Metric}.MSMStrain.shape.gii
-MetricRight=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.R.${Metric}.MSMStrain.shape.gii
-MetricAsymmetry=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.asymmetry.${Metric}.MSMStrain.shape.gii
+MetricLeft=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_left_${Metric}.MSMStrain.shape.gii
+MetricRight=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_${Metric}.MSMStrain.shape.gii
+MetricAsymmetry=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_asymmetry_${Metric}.MSMStrain.shape.gii
 
 wb_command -metric-math '(x-y)/((x+y)/2)' ${MetricAsymmetry} -var x ${MetricLeft} -var y ${MetricRight}
 
@@ -88,11 +88,11 @@ done
 ### Create an average midthickness surface to perform metric smoothing on
 ### To do this, first need to flip the right hemisphere midthickness along the L-R axis, then can average surface XYZ coordinate, and then smooth to minimise 'dimples and pimples' 
 
-LeftMidthickness=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.L.midthickness.MSMStrain.surf.gii
-RightMidthickness=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.R.midthickness.MSMStrain.surf.gii
-RightMidthicknessFlipped=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.R.midthickness.flipped.MSMStrain.surf.gii
-AverageMidthickness=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.LR.midthickness.MSMStrain.surf.gii
-AverageMidthicknessSmoothed=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.LR.midthickness.smoothed.MSMStrain.surf.gii
+LeftMidthickness=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_left_midthickness.MSMStrain.surf.gii
+RightMidthickness=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_right_midthickness.MSMStrain.surf.gii
+RightMidthicknessFlipped=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_right_flipped_midthickness.MSMStrain.surf.gii
+AverageMidthickness=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_LR_midthickness.MSMStrain.surf.gii
+AverageMidthicknessSmoothed=/data/CorticalAsymmetry/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_LR_midthickness.smoothed.MSMStrain.surf.gii
 
 echo 'Creating average midthickness surface for metric smoothing' 
 
