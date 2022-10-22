@@ -29,6 +29,8 @@ For the dHCP, use [CorticalSurfaceProcessing.sh]()
 
 For the HCP-YA, use [CorticalSurfaceProcessing.sh](https://github.com/metrics-lab/CorticalAsymmetry/blob/main/HCP-YA/CorticalSurfaceProcessing.sh)
 
+For dHCP-to-HCP, use NEED TO ADD 
+
 Code for processing resting-state fMRI for functional asymmetry analyses in the dHCP is located [here](https://git.fmrib.ox.ac.uk/seanf/asymmetry-analysis). 
 
 ### 3. Permutation analyses 
