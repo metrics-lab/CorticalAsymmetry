@@ -120,11 +120,11 @@ wb_command -metric-regression ${MidthicknessVA} ${CorrMidthicknessVA} -remove ${
 
 done
 
-AverageMidthicknessVA=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.LR.corr_midthickness_va.MSMStrain.shape.gii
-LeftMidthicknessVA=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.L.corr_midthickness_va.MSMStrain.shape.gii
-RightMidthicknessVA=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.R.corr_midthickness_va.MSMStrain.shape.gii
+AverageCorrMidthicknessVA=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.LR.corr_midthickness_va.MSMStrain.shape.gii
+LeftCorrMidthicknessVA=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.L.corr_midthickness_va.MSMStrain.shape.gii
+RightCorrMidthicknessVA=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.R.corr_midthickness_va.MSMStrain.shape.gii
 
-wb_command -metric-math '(x+y)/2' ${AverageMidthicknessVA} -var x ${LeftMidthicknessVA} -var y ${RightMidthicknessVA}
+wb_command -metric-math '(x+y)/2' ${AverageCorrMidthicknessVA} -var x ${LeftCorrMidthicknessVA} -var y ${RightCorrMidthicknessVA}
 
 ### Finally, perform metric smoothing 
 
@@ -136,7 +136,7 @@ MetricIn=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.asymmetry.${
 SmoothingKernel=2
 MetricOut=/data/CorticalAsymmetry/HCPAsymmetry/${Subject}/${Subject}.asymmetry.${Metric}.MSMStrain.s2.shape.gii
 
-wb_command -metric-smoothing ${AverageMidthicknessSmoothed} ${MetricIn} ${SmoothingKernel} ${MetricOut} -corrected-areas ${AverageMidthicknessVA}
+wb_command -metric-smoothing ${AverageMidthicknessSmoothed} ${MetricIn} ${SmoothingKernel} ${MetricOut} -corrected-areas ${AverageCorrMidthicknessVA}
 
 done
 
