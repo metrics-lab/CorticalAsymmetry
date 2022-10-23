@@ -146,7 +146,7 @@ MetricIn=${AnalysisDirectory}/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${
 SmoothingKernel=2
 MetricOut=$${AnalysisDirectory}/dHCPAsymmetry/sub-${Subject}/ses-${Session}/sub-${Subject}_ses-${Session}_${Hemisphere}_asymmetry_${Metric}.${RegName}.s2.shape.gii
 
-${WorkbenchBinary} -metric-smoothing ${AverageMidthicknessSmoothed} ${MetricIn} ${SmoothingKernel} ${MetricOut} -corrected-areas ${AverageMidthicknessVA}
+${WorkbenchBinary} -metric-smoothing ${AverageMidthicknessSmoothed} ${MetricIn} ${SmoothingKernel} ${MetricOut} -corrected-areas ${AverageCorrMidthicknessVA}
 
 done
 
