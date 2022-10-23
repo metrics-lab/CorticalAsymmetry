@@ -25,9 +25,9 @@ First, cortical surfaces need to be registered from their native space to the fu
 
 ### 2. Cortical surface processing
 These scripts perform the following steps: 
-1. Calculating surface area 
-2. Resampling surfaces and structural cortical metrics from native to symmetric template space
-3. Calculating difference maps (asymmetry index maps for each cortical metric) and smoothing
+1. Calculate cortical surface area using the pial surface 
+2. Resample anatomical surfaces and structural cortical metrics from native to symmetric template space
+3. Calculate difference maps (asymmetry index maps for each cortical metric) and smooth
 
 **dHCP:** Use [CorticalSurfaceProcessing.sh]()
 
